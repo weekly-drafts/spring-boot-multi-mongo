@@ -1,4 +1,4 @@
-package com.example.model.repository.primary;
+package com.marcosbarbero.wd.multiplemongo.repository.primary;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +14,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "first_mongo")
-public class PrimaryMongoObject {
+public class PrimaryModel {
 
 	@Id
 	private String id;
@@ -23,7 +23,7 @@ public class PrimaryMongoObject {
 
 	@Override
 	public String toString() {
-        return "PrimaryMongoObject{" + "id='" + id + '\'' + ", value='" + value + '\''
+        return "PrimaryModel{" + "id='" + id + '\'' + ", value='" + value + '\''
 				+ '}';
 	}
 }

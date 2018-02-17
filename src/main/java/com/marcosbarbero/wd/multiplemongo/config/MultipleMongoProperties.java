@@ -1,9 +1,9 @@
-package com.example.config.props;
-
-import lombok.Data;
+package com.marcosbarbero.wd.multiplemongo.config;
 
 import org.springframework.boot.autoconfigure.mongo.MongoProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+
+import lombok.Data;
 
 /**
  * @author Marcos Barbero
@@ -12,6 +12,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "mongodb")
 public class MultipleMongoProperties {
 
-	private MongoProperties primary = new MongoProperties();
-	private MongoProperties secondary = new MongoProperties();
+    private MongoProperties primary = new MongoProperties();
+    private MongoProperties secondary = new MongoProperties();
 }
