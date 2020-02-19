@@ -2,3 +2,8 @@
 .idea
 /target
 *.iml
+.vscode
+.settings
+.classpath
+.factorypath
+.project

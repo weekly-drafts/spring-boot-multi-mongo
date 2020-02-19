@@ -2,11 +2,15 @@ mongodb:
   primary:
     host: localhost
     port: 27017
-    database: second
+    database: first
+    username: apifirst
+    password: pa55w0rd
   secondary:
     host: localhost
     port: 27017
     database: second
+    username: apisecond
+    password: pa55w0rd
 
 spring:
   autoconfigure:
